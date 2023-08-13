@@ -29,12 +29,6 @@ app.use("/api/cart", cartRoute);
 app.use("/api/orders", orderRoute);
 app.use("/api/checkout", stripeRoute);
 
-app.use(express.static(path.join(__dirname, "public")));
-
-app.get("*", (req, res) => {
-	res.sendFile(__dirname + "/public/index.html");
-});
-
 app.listen(process.env.PORT || 5000, () => {
 	console.log("backend");
 });

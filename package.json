@@ -8,5 +8,8 @@
     "deploy": "npm run build --prefix client && npm start --prefix api"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "redux-persist": "^6.0.0"
+  }
 }
